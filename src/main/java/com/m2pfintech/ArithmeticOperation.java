@@ -18,7 +18,7 @@ public class ArithmeticOperation
         return firstNumber*secondNumber;
     }
 
-    public double divide(double firstNumber, double secondNumber)
+    public double divide(double firstNumber, double secondNumber) throws ArithmeticException
     {
 
         if(secondNumber == 0)
