@@ -46,4 +46,25 @@ public class ArithmeticOperationTest
 
       assertEquals(expectedValue,actualValue);
    }
+
+   @Test
+   void toReturnZeroWhenFiveIsMultipliedByZero()
+   {
+      int expectedValue = 0;
+
+      int actualValue = arithmeticObject.multiply(0,5);
+
+      assertEquals(expectedValue,actualValue);
+   }
+
+   @Test
+   void toReturnTwoWhenFourIsDividedByTwo()
+   {
+      double expectedValue = 2.0;
+
+      double actualValue = arithmeticObject.divide(4,2);
+
+      assertEquals(expectedValue,actualValue);
+   }
+
 }

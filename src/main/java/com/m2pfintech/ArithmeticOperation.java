@@ -17,4 +17,10 @@ public class ArithmeticOperation
     {
         return firstNumber*secondNumber;
     }
+
+    public double divide(double firstNumber, double secondNumber)
+    {
+        double result = firstNumber / secondNumber;
+        return result;
+    }
 }
