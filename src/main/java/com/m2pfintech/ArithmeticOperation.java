@@ -20,7 +20,6 @@ public class ArithmeticOperation
 
     public double divide(double firstNumber, double secondNumber)
     {
-        double result = firstNumber / secondNumber;
-        return result;
+        return firstNumber / secondNumber;
     }
 }

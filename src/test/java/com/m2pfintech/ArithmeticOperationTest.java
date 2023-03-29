@@ -58,6 +58,26 @@ public class ArithmeticOperationTest
    }
 
    @Test
+   void toReturnMinusOneWhenMinusOneIsMultipliedByOne()
+   {
+      int expectedValue = -1;
+
+      int actualValue = arithmeticObject.multiply(-1,1);
+
+      assertEquals(expectedValue,actualValue);
+   }
+
+   @Test
+   void toReturnOneWhenMinusOneIsMultipliedByMinusOne()
+   {
+      int expectedValue = 1;
+
+      int actualValue = arithmeticObject.multiply(-1,-1);
+
+      assertEquals(expectedValue,actualValue);
+   }
+
+   @Test
    void toReturnTwoWhenFourIsDividedByTwo()
    {
       double expectedValue = 2.0;
@@ -66,5 +86,8 @@ public class ArithmeticOperationTest
 
       assertEquals(expectedValue,actualValue);
    }
+
+
+
 
 }
