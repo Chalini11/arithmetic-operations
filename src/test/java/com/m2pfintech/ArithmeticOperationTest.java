@@ -3,6 +3,7 @@ package com.m2pfintech;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ArithmeticOperationTest
 {
@@ -86,8 +87,23 @@ public class ArithmeticOperationTest
 
       assertEquals(expectedValue,actualValue);
    }
+   @Test
+   void toReturnMinusTwoWhenMinusFourIsDividedByTwo()
+   {
+      double expectedValue = -2;
 
+      double actualValue = arithmeticObject.divide(-4,2);
 
+      assertEquals(expectedValue,actualValue);
+   }
+
+   @Test
+   void toThrowExceptionWhenDividedByZero()
+   {
+     assertThrows(ArithmeticException.class,
+             () -> arithmeticObject.divide(3,0)
+             );
+   }
 
 
 }
